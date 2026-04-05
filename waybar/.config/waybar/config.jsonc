@@ -1,0 +1,37 @@
+{
+    "include": [
+        "$HOME/.config/waybar/modules/modules-main.jsonc",
+        "$HOME/.config/waybar/modules/modules-groups.jsonc",
+        "$HOME/.config/waybar/modules/modules-custom.jsonc"
+    ],
+
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "reload_style_on_change": true,
+    "margin-top": 4,
+    "margin-left": 5,
+    "margin-right": 5,
+    "padding": 5,
+    "spacing": 10,
+    "modules-left": [
+        "hyprland/workspaces#preview",
+        "custom/cava"
+    ],
+
+    "modules-center": [
+        "clock",
+        "custom/notify"
+    ],
+
+    "modules-right": [
+        "tray",
+        "pulseaudio",
+        "battery", 
+        "backlight",
+	      "group/network"
+    ]
+}
