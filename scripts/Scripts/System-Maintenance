@@ -1,0 +1,14 @@
+#!/bin/bash
+
+options=$(echo -e "System Update\nParu Full System Update\nUpdatedb\nDotfiles Commit" | rofi -dmenu -p "System Maintenance")
+
+case $options in
+"System Update") kitty --hold sudo pacman -Syu ;;
+"Paru Full System Update") kitty --hold paru -Syu ;;
+"Updatedb") kitty --hold sudo updatedb ;;
+"Dotfiles Commit")
+  kitty --hold
+  cd ~/dotfiles
+  git commit -am "Dotfiles sync"
+  ;;
+esac

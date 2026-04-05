@@ -1,0 +1,10 @@
+#!/bin/bash
+
+options=$(echo -e "Power Saver\nBalanced\nPerformance" | rofi -dmenu -p "Power Profiles")
+
+case $options in
+  "Power Saver") powerprofilesctl set power-saver;;
+  "Balanced") powerprofilesctl set balanced;;
+  "Performance") powerprofilesctl set performance;;
+esac
+

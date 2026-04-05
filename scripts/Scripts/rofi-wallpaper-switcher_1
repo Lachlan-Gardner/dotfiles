@@ -1,0 +1,9 @@
+#!/bin/bash
+
+DIR_TO_SHOW=$HOME/Downloads/Wallpapers/
+
+cd ~/Downloads/Wallpapers/
+
+SELECTION=$(ls | while read A; do echo -en "$A\x00icon\x1f$A\n"; done | rofi -dmenu)
+
+wal-tile $SELECTION

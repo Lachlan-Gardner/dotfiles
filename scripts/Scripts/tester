@@ -1,0 +1,8 @@
+selection=$(echo -e "Firefox\nTerminal\nFiles" | rofi -dmenu -p "Apps")
+
+case "$selection" in
+    "Firefox") firefox ;;
+    "Terminal") systemctl sleep ;;
+    "Files") thunar ;;
+esac
+
