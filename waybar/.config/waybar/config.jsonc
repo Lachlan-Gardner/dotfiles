@@ -17,6 +17,7 @@
     "margin-right": 5,
     "padding": 5,
     "spacing": 10,
+    "height": 18,
     "modules-left": [
         "hyprland/workspaces#preview",
         "custom/cava"
@@ -32,6 +33,6 @@
         "pulseaudio",
         "battery", 
         "backlight",
-	      "group/network"
+	    "group/tester-network-module"
     ]
 }

@@ -14,7 +14,7 @@
 window#waybar {
   background: rgba(0, 0, 0, 0.4);
   color: @foreground;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 10px;
   border: 1px solid;
   border-color: @color3;
   padding: 0px 0px 5px 0px;
@@ -40,40 +40,40 @@ tooltip label {
   color: @foreground;
   margin-right: 5px;
   background-color: @background;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 #workspaces button.active {
   color: @background;
   background: @foreground;
   padding: 0 12px;
-  margin: 3px 0;
-  border-radius: 15px;
+  margin: 3px;
+  border-radius: 10px;
 }
 
 #workspaces button.focused {
   color: @background;
   background: @foreground;
   padding: 0 12px;
-  margin: 3px 0;
-  border-radius: 15px;
+  margin: 3px 3px 3px 0px;
+  border-radius: 10px;
 }
 
 #workspaces button.urgent {
   color: @background;
-  background: @foreground;
+  background: @color3;
   padding: 0 12px;
-  margin: 3px 0;
-  border-radius: 15px;
+  margin: 3px;
+  border-radius: 10px;
 }
 
 #workspaces button:hover {
   color: @background;
   background: @foreground;
   padding: 0 12px;
-  margin: 3px 0;
-  border-radius: 15px;
-  transition: width 0.3s;
+  margin: 3px;
+  border-radius: 10px;
+  transition: width 1s;
 }
 
 #window,
@@ -91,7 +91,6 @@ tooltip label {
 #hyprland-keyboard,
 #power-profiles-daemon,
 #backlight,
-#network#speed,
 #custom-cava {
   background: @background;
   border: 1px solid;
@@ -99,17 +98,21 @@ tooltip label {
   opacity: 0.9;
   padding: 0px 10px 0px 10px;
   margin: 3px 0px 3px 0px;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
-#network {
+#tester-network-module {
   background: @background;
   opacity: 0.9;
   padding: 0px 10px 0px 10px;
-  margin: 4px 10px 4px 1px;
+  margin: 4px 10px 4px 0px;
   border: 1px solid;
   border-color: @color8;
-  border-radius: 15px;
+  border-radius: 10px;
+}
+
+#tester-network-module #network {
+  padding: 0px 10px 0px 6px;
 }
 
 #window:hover,
@@ -123,9 +126,7 @@ tooltip label {
 #custom-cava:hover {
   background: @foreground;
   color: @background;
-  border: 1px solid;
   border-color: @color4;
-  margin: 2px 0px 2px 0px;
 }
 
 #custom-notify {
@@ -138,47 +139,9 @@ tooltip label {
   font-size: 14px;
 }
 
-/* @keyframes blink {
-  to {
-    background-color: #ffffff;
-    color: #333333;
-  }
-} */
-
 #battery.critical:not(.charging) {
   color: #f53c3c;
-  /* animation-name: none;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate; */
 }
-#custom-clipboard {
-  font-size: 14px;
-}
-
-#backlight {
-
-}
-
-#temperature {
-  border-radius: 0 10px 10px 0;
-}
-/* 
-#tray {
-  margin-right: 10px;
-  background-color: transparent;
-} */
-/* 
-#custom-light_dark {
-  border-radius: 15px 0 0 15px;
-  margin-left: 10px;
-  padding: 0 15px;
-} */
-/* 
-#temperature.critical {
-  color: #e92d4d;
-} */
 
 #workspaces {
   margin-left: 10px
@@ -189,34 +152,8 @@ tooltip label {
 }
 
 #clock {
-  border-radius: 15px;
-  padding: 0 20px;
   font-size: 20px;
 }
-
-/* #power-profiles-daemon {
-  background-color: @background;
-  border-radius: 15px;
-  padding-right: 20px;
-  padding-left: 15px;
-}
-
-#power-profiles-daemon.performance {
-  color: #fab387;
-  font-size: 15px;
-  padding-right: 18px;
-}
-
-#power-profiles-daemon.balanced {
-  color: #a6e3a1;
-  font-size: 15px;
-  padding-right: 23px;
-}
-
-#power-profiles-daemon.power-saver {
-  color: #89dceb;
-  font-size: 15px;
-} */
 
 #tray {
    background: transparent;
