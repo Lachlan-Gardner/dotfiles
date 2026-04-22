@@ -16,8 +16,8 @@
     "margin-left": 5,
     "margin-right": 5,
     "padding": 5,
-    "spacing": 10,
-    "height": 18,
+    "spacing": 8,
+    "height": 39,
     "modules-left": [
         "hyprland/workspaces#preview",
         "custom/cava"
@@ -34,5 +34,9 @@
         "battery", 
         "backlight",
 	    "group/tester-network-module"
-    ]
+    ],
+
+    "tray": {
+        "spacing": 20
+    }
 }

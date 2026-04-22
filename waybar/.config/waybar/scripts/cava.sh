@@ -1,6 +1,9 @@
 #!/bin/bash
 
-bar="⡀⡄⡆⡇"
+#bar=""
+#bar="⣀⣤⣶⣿"
+#bar=""
+bar=""
 dict="s/;//g;"
 
 # creating "dictionary" to replace char with bar
@@ -25,7 +28,7 @@ source = auto
 method = raw
 raw_target = /dev/stdout
 data_format = ascii
-ascii_max_range = 3
+ascii_max_range = 8
 " > $config_file
 
 # read stdout from cava

@@ -34,7 +34,6 @@ tooltip label {
   color: @foreground;
 }
 
-
 #workspaces button {
   padding: 2px;
   color: @foreground;
@@ -68,6 +67,7 @@ tooltip label {
 }
 
 #workspaces button:hover {
+
   color: @background;
   background: @foreground;
   padding: 0 12px;
@@ -82,7 +82,6 @@ tooltip label {
 #memory,
 #clock,
 #pulseaudio,
-#tray > .active,
 #temperature,
 #workspaces,
 #taskbar,
@@ -115,7 +114,6 @@ tooltip label {
   padding: 0px 10px 0px 6px;
 }
 
-#window:hover,
 #custom-clipboard:hover,
 #clock:hover,
 #pulseaudio:hover,
@@ -143,30 +141,12 @@ tooltip label {
   color: #f53c3c;
 }
 
-#workspaces {
-  margin-left: 10px
-}
-
 #pulseaudio {
   background-color: @background;
 }
 
 #clock {
   font-size: 20px;
-}
-
-#tray {
-   background: transparent;
-   border: 0px;
-   padding: 10px;
-}
-
-#tray > .active {
-  padding-right: 10px;
-  padding-left: 10px;
-  background: @background;
-  border: 1px solid;
-  border-color: @color8;
 }
 
 #tray menu {
@@ -176,4 +156,28 @@ tooltip label {
   border: 1px solid;
   border-color: @color3;
   border-radius: 10px;
+}
+
+#custom-cava {
+  font-size: 30px;
+}
+
+#workspaces {
+  margin-left: 10px;
+}
+
+#tray > .active,
+#tray > .passive {
+  background: @background;
+  border: 1px solid;
+  border-color: @color8;
+  opacity: 0.9;
+  border-radius: 10px;
+  min-width: 30px;
+  margin: 3px 0px 3px 0px;
+}
+
+#tray {
+  min-width: 30px;
+  margin: 3px 0px 3px 0px;
 }
