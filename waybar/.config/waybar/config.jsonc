@@ -25,7 +25,8 @@
 
     "modules-center": [
         "clock",
-        "custom/notify"
+        "custom/notify",
+        "group/power-profiles"
     ],
 
     "modules-right": [
@@ -37,6 +38,7 @@
     ],
 
     "tray": {
-        "spacing": 20
+        "spacing": 5,
+        "show-passive-items": false
     }
 }

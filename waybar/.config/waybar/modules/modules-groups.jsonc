@@ -20,5 +20,28 @@
              "network#speed"
         ],
         "on-click-right": "rofi-wifi-menu"
+    },
+
+    "group/power-profiles": {
+        "orientation": "inherit",
+        "background": "inherit",
+        "opacity": "inherit",
+        "padding": "inherit",
+        "margin": "inherit",
+        "border": "inherit",
+        "border-color": "inherit",
+        "border-radius": "inherit",
+        "drawer": {
+             "transition-duration": 300,
+             "children-class": "not-memory",
+             "transition-left-to-right": false
+        },
+
+        "modules": [
+               "custom/current-mode",
+             "custom/power-saver",
+             "custom/balanced",
+             "custom/performance"
+        ]
     }
 }

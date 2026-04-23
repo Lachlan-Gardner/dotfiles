@@ -1,16 +1,5 @@
 {
-    //_________\\ Custom Modules //_________\\
-
-    // power menu ( universal )
-    "custom/power_btn": {
-        "format": "",
-        "on-click": "wlogout -b 6 --layout ~/.config/wlogout/layout --css ~/.config/wlogout/style.css",
-        "tooltip": false
-    },
-
     "custom/notify": {
-        "tooltip": true,
-        "tooltip-format": "You have<span foreground='#4A6096'> {} </span>notifications.",
         "format": "{icon} ",
         "format-icons": {
             "notification": "<span foreground='red'><sup></sup></span>",
@@ -30,44 +19,39 @@
         "escape": true
     },
 
-    // waybar cava ( haven't add in the waybar )
+    // waybar cava
     "custom/cava": {
         "exec": "/home/Lachlan/.config/waybar/scripts/cava.sh",
         "framerate": 60
     },
 
-    
-    // clipboard manager
-    "custom/clipboard": {
-        "format": "󰅌 {}",
-        "exec": "~/.config/hypr/scripts/cliphist.sh l",
-        "on-click": "~/.config/hypr/scripts/cliphist.sh c",
-        "on-click-right": "~/.config/hypr/scripts/cliphist.sh w",
-        "interval": 1,
-        "tooltip-format": "You have {} items copied"
-    },
-    // power section expand
-    "custom/power": {
-        "format": "",
-        "tooltip-format": "Poweroff",
-        "on-click": "~/.config/hypr/scripts/power.sh --poweroff"
+    // Leaf: 
+    // Lightning: 
+    // Scales: 
+    "custom/power-saver": {
+        "format":"",
+        "on-click": "tlpctl set power-saver"        
     },
 
-    "custom/reboot": {
-        "format": "",
-        "tooltip-format": "Reboot" ,
-        "on-click": "~/.config/hypr/scripts/power.sh --reboot"
+    "custom/balanced": {
+        "format":"",
+        "on-click": "tlpctl set balanced"        
     },
 
-    "custom/lock": {
-        "format": "",
-        "tooltip-format": "Screen lock" ,
-        "on-click": "~/.config/hypr/scripts/power.sh --lock"
+    "custom/performance": {
+        "format":"",
+        "on-click": "tlpctl set performance"        
     },
-    
-    "custom/logout": {
-        "format": "󰿅",
-        "tooltip-format": "logout" ,
-        "on-click": "~/.config/hypr/scripts/power.sh --logout"
+
+    "custom/current-mode": {
+        "format": "{icon}",
+        "format-icons": {
+            "power-saver": "",
+            "performance": "",
+            "balanced": ""
+        },
+        "exec": "/home/Lachlan/dotfiles/waybar/.config/waybar/scripts/currentPowerSavingMode",
+        "return-type": "json",
+        "interval": 0.3
     }
 }

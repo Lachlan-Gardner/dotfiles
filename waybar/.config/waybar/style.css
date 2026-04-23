@@ -52,7 +52,7 @@ tooltip label {
 
 #workspaces button.focused {
   color: @background;
-  background: @foreground;
+  background: @color3;
   padding: 0 12px;
   margin: 3px 3px 3px 0px;
   border-radius: 10px;
@@ -90,7 +90,9 @@ tooltip label {
 #hyprland-keyboard,
 #power-profiles-daemon,
 #backlight,
-#custom-cava {
+#custom-cava,
+#tray,
+#power-profiles {
   background: @background;
   border: 1px solid;
   border-color: @color8;
@@ -168,16 +170,25 @@ tooltip label {
 
 #tray > .active,
 #tray > .passive {
-  background: @background;
-  border: 1px solid;
-  border-color: @color8;
   opacity: 0.9;
-  border-radius: 10px;
-  min-width: 30px;
+  min-width: 18px;
   margin: 3px 0px 3px 0px;
+  border-radius: 10px
 }
 
 #tray {
-  min-width: 30px;
-  margin: 3px 0px 3px 0px;
+  background-color: @background;
+  border: 1px solid;
+  border-color: @color8;
+  min-width: 18px;
 }
+
+#power-profiles {
+  font-size: 25px;
+}
+#power-profiles * {
+  font-size: 19px;
+  margin-left: 3px;
+  margin-right: 5px;
+}
+
