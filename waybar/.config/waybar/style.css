@@ -185,10 +185,60 @@ tooltip label {
 
 #power-profiles {
   font-size: 25px;
+  padding: 5px 10px 5px 10px;
 }
 #power-profiles * {
   font-size: 19px;
-  margin-left: 3px;
-  margin-right: 5px;
 }
 
+#power-profiles #custom-power-saver,
+#power-profiles #custom-performance,
+#power-profiles #custom-balanced {
+  margin: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 15px;
+  background-color: @color16;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+#power-profiles #custom-power-saver {
+  border-radius: 10px 0px 0px 10px;
+  border-left: 1px solid;
+}
+
+#power-profiles #custom-power-saver:hover {
+  background-color: @foreground;
+  color: @background;
+  border-color: @foreground;
+  border-radius: 10px 0px 0px 10px;
+}
+
+#power-profiles #custom-performance:hover {
+  background-color: @foreground;
+  color: @background;
+  border-color: @foreground;
+}
+
+#power-profiles #custom-balanced:hover {
+  background-color: @foreground;
+  color: @background;
+  border-color: @foreground;
+}
+
+#power-profiles.drawer-open #custom-current-mode {
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: @foreground;
+  color: @background;
+  border-color: @foreground;
+  border-radius: 0px 10px 10px 0px;
+}
+
+#power-profiles #custom-current-mode {
+  padding-left: 5px;
+  padding-right: 5px;
+}

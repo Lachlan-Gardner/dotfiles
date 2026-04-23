@@ -25,13 +25,13 @@
 
     "modules-center": [
         "clock",
-        "custom/notify",
-        "group/power-profiles"
+        "custom/notify"
     ],
 
     "modules-right": [
         "tray",
         "pulseaudio",
+        "group/power-profiles",
         "battery", 
         "backlight",
 	    "group/tester-network-module"
@@ -39,6 +39,6 @@
 
     "tray": {
         "spacing": 5,
-        "show-passive-items": false
+        "show-passive-items": true
     }
 }

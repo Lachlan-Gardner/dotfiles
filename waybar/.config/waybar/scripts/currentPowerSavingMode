@@ -3,9 +3,9 @@
 currentMode=$(tlpctl get)
 
 if [ $currentMode = "power-saver" ]; then
-  echo '{"text": "", "alt": "power-saver", "tooltip": "Power-Saver", "class": "power-saver", "percentage": 0}'
+  echo '{"text": "", "alt": "power-saver", "tooltip": "Power-Saver", "class": "current-mode", "percentage": 0}'
 elif [ $currentMode = "balanced" ]; then
-  echo '{"text": "", "alt": "balanced", "tooltip": "Balanced", "class": "balanced", "percentage": 0}'
+  echo '{"text": "", "alt": "balanced", "tooltip": "Balanced", "class": "current-mode", "percentage": 0}'
 else
-  echo '{"text": "", "alt": "performance", "tooltip": "Performance", "class": "performance", "percentage": 0}'
+  echo '{"text": "", "alt": "performance", "tooltip": "Performance", "class": "current-mode", "percentage": 0}'
 fi
