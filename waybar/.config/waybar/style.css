@@ -162,19 +162,20 @@ tooltip label {
 
 #custom-cava {
   font-size: 30px;
+  padding-bottom: 2px;
 }
 
 #workspaces {
   margin-left: 10px;
 }
 
-#tray > .active,
-#tray > .passive {
+#tray > .active {
   opacity: 0.9;
   min-width: 18px;
   margin: 3px 0px 3px 0px;
   border-radius: 10px
 }
+
 
 #tray {
   background-color: @background;
@@ -183,18 +184,11 @@ tooltip label {
   min-width: 18px;
 }
 
-#power-profiles {
-  font-size: 25px;
-  padding: 5px 10px 5px 10px;
-}
-#power-profiles * {
-  font-size: 19px;
-}
-
 #power-profiles #custom-power-saver,
 #power-profiles #custom-performance,
 #power-profiles #custom-balanced {
-  margin: 0px;
+  margin-top: 3px;
+  margin-bottom: 3px;
   padding-left: 5px;
   padding-right: 5px;
   padding-top: 3px;
@@ -203,6 +197,10 @@ tooltip label {
   background-color: @color16;
   border-top: 1px solid;
   border-bottom: 1px solid;
+}
+
+#power-profiles #custom-performance {
+  border-right: 1px solid;
 }
 
 #power-profiles #custom-power-saver {
@@ -229,16 +227,9 @@ tooltip label {
   border-color: @foreground;
 }
 
-#power-profiles.drawer-open #custom-current-mode {
-  padding-left: 5px;
-  padding-right: 5px;
-  background-color: @foreground;
-  color: @background;
-  border-color: @foreground;
-  border-radius: 0px 10px 10px 0px;
-}
-
 #power-profiles #custom-current-mode {
   padding-left: 5px;
   padding-right: 5px;
+  margin: 3px 0px 3px 0px;
+  font-size: 20px;
 }
