@@ -1,4 +1,0 @@
-#!/bin/bash
-
-wal -n -i "$@"
-awww img "$(<"${HOME}/.cache/wal/wal")" --transition-type wipe

@@ -1,5 +1,0 @@
-swayidle -w timeout 270 'notify-send "Swayidle" "Locking screen in 30 seconds."' \
-timeout 300 'systemctl sleep' \
-before-sleep 'hyprlock'
-
-

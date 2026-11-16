@@ -1,6 +1,0 @@
-#!/bin/bash
-
-options=$(echo -e "Mount All\nUnmount All" | rofi -dmenu -p "Usb Options")
-
-case $options in
-  "Mount All")

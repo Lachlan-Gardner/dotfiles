@@ -1,9 +1,0 @@
-#!/bin/bash
-
-DIR_TO_SHOW=$HOME/Wallpapers/
-
-cd $DIR_TO_SHOW
-
-SELECTION=$(ls | while read A; do echo -en "$A\0icon\x1f$A\n"; done | rofi -dmenu -show-icons -theme ~/.config/rofi/Themes/Wallpaper-Switcher-Theme.rasi)
-
-wal-tile $DIR_TO_SHOW$SELECTION
