@@ -1,10 +1,28 @@
 #!/bin/bash
 
-option=$(printf "Hyprland\nKitty\nWaybar\nSwaync" | rofi -dmenu -p "Edit Config")
+option=$(printf "Hyprland - Config\nHyprland - Animations\nHyprland - Binds\nHyprland - Decoration\nHyprland - Default Apps\nHyprland - Environment Variables\nHyprland - Autostart\nHyprland - General\nHyprland - Inputs\nHyprland - Layouts\nHyprland - Misc\nHyprland - Monitors\nHyprland - Windows and Workspaces\nKitty\nWaybar - Config\nWaybar - Style\nSwaync\nHypridle\nHyprlock\nRofi - Config\nRofi - Theme\nConfig Chooser" | rofi -dmenu -p "Edit Config")
 
 case "$option" in
-	"Hyprland") kitty --hold nvim "$HOME/.config/hypr/hyprland.conf";;
-	"Kitty") kitty --hold nvim "$HOME/.config/kitty/kitty.conf";;
-	"Waybar") kitty --hold nvim "$HOME/.config/waybar/config.jsonc";;
-	"Swaync") kitty --hold nvim "$HOME/.config/swaync/config.jsonc";;
+	"Hyprland - Config") kitty nvim "$HOME/.config/hypr/hyprland.conf";;
+	"Hyprland - Animations") kitty  nvim "$HOME/.config/hypr/Configs/Animations.conf";;
+	"Hyprland - Binds") kitty  nvim "$HOME/.config/hypr/Configs/Binds.conf";;
+	"Hyprland - Decoration") kitty  nvim "$HOME/.config/hypr/Configs/Decoration.conf";;
+	"Hyprland - Default Apps") kitty  nvim "$HOME/.config/hypr/Configs/Default-Apps.conf";;
+	"Hyprland - Environment Variables") kitty  nvim "$HOME/.config/hypr/Configs/Environment-Variables.conf";;
+	"Hyprland - Autostart") kitty  nvim "$HOME/.config/hypr/Configs/Execs.conf";;
+	"Hyprland - General") kitty nvim "$HOME/.config/hypr/Configs/General.conf";;
+	"Hyprland - Inputs") kitty nvim "$HOME/.config/hypr/Configs/Input.conf";;
+	"Hyprland - Layouts") kitty nvim "$HOME/.config/hypr/Configs/Layouts.conf";;
+	"Hyprland - Misc") kitty nvim "$HOME/.config/hypr/Configs/Misc.conf";;
+	"Hyprland - Monitors") kitty nvim "$HOME/.config/hypr/Configs/Monitors.conf";;
+	"Hyprland - Windows and Workspaces") kitty nvim "$HOME/.config/hypr/Configs/Windows-Workspaces.conf";;
+	"Kitty") kitty nvim "$HOME/.config/kitty/kitty.conf";;
+	"Waybar - Config") kitty nvim "$HOME/.config/waybar/config.jsonc";;
+	"Waybar - Style") kitty nvim "$HOME/.config/waybar/style.css";;
+	"Swaync") kitty nvim "$HOME/.config/swaync/config.jsonc";;
+	"Hypridle") kitty nvim "$HOME/.config/hypr/hypridle.conf";;
+	"Hyprlock") kitty nvim "$HOME/.config/hypr/hyprlock.conf";;
+	"Rofi - Config") kitty nvim "$HOME/.config/rofi/config.rasi";;
+	"Rofi - Theme") kitty nvim "$HOME/.config/rofi/Themes/Test-Theme.rasi";;
+	"Config Chooser") kitty sudo nvim "/usr/local/bin/config-chooser";;
 esac

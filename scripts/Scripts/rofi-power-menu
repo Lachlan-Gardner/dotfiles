@@ -7,5 +7,5 @@ case $options in
 	"Sleep") systemctl sleep;;
 	"Hibernate") systemctl hibernate;;
 	"Reboot") reboot;;
-	"Shutdown") systemctl power-off;;
+	"Shutdown") systemctl poweroff;;
 esac

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR_TO_SHOW=$HOME/Downloads/Wallpapers/
+DIR_TO_SHOW=$HOME/Wallpapers/
 
 cd $DIR_TO_SHOW
 
