@@ -1,0 +1,235 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "JetBrainsMono Nerd Font", "MesloLGS Nerd Font", "Font Awesome";
+  font-weight: bold;
+  font-size: 12px;
+  min-height: 0;
+}
+
+@import "style/theme.css";
+
+@import "/home/Lachlan/.cache/wal/colors-waybar.css";
+
+window#waybar {
+  background: rgba(0, 0, 0, 0.4);
+  color: @foreground;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: @color3;
+  padding: 0px 0px 5px 0px;
+}
+
+tooltip {
+  background: @background;
+  opacity: 0.8;
+  border-radius: 15px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: @foreground;
+}
+
+tooltip label {
+  font-size: 16px;
+  color: @foreground;
+}
+
+#workspaces button {
+  padding: 2px;
+  color: @foreground;
+  margin-right: 5px;
+  background-color: @background;
+  border-radius: 10px;
+}
+
+#workspaces button.active {
+  color: @background;
+  background: @foreground;
+  padding: 0 12px;
+  margin: 3px;
+  border-radius: 10px;
+}
+
+#workspaces button.focused {
+  color: @background;
+  background: @color3;
+  padding: 0 12px;
+  margin: 3px 3px 3px 0px;
+  border-radius: 10px;
+}
+
+#workspaces button.urgent {
+  color: @background;
+  background: @color3;
+  padding: 0 12px;
+  margin: 3px;
+  border-radius: 10px;
+}
+
+#workspaces button:hover {
+
+  color: @background;
+  background: @foreground;
+  padding: 0 12px;
+  margin: 3px;
+  border-radius: 10px;
+  transition: width 1s;
+}
+
+#window,
+#cpu,
+#disk,
+#memory,
+#clock,
+#pulseaudio,
+#temperature,
+#workspaces,
+#taskbar,
+#custom-notify,
+#battery,
+#hyprland-keyboard,
+#power-profiles-daemon,
+#backlight,
+#custom-cava,
+#tray,
+#power-profiles {
+  background: @background;
+  border: 1px solid;
+  border-color: @color8;
+  opacity: 0.9;
+  padding: 0px 10px 0px 10px;
+  margin: 3px 0px 3px 0px;
+  border-radius: 10px;
+}
+
+#tester-network-module {
+  background: @background;
+  opacity: 0.9;
+  padding: 0px 10px 0px 10px;
+  margin: 4px 10px 4px 0px;
+  border: 1px solid;
+  border-color: @color8;
+  border-radius: 10px;
+}
+
+#tester-network-module #network {
+  padding: 0px 10px 0px 6px;
+}
+
+#custom-clipboard:hover,
+#clock:hover,
+#pulseaudio:hover,
+#taskbar:hover,
+#custom-notify:hover,
+#battery:hover,
+#backlight:hover,
+#custom-cava:hover {
+  background: @foreground;
+  color: @background;
+  border-color: @color4;
+}
+
+#custom-notify {
+  padding: 0px 5px 0px 10px
+}
+
+
+#battery {
+  color: #a6e3a1; 
+  font-size: 14px;
+}
+
+#battery.critical:not(.charging) {
+  color: #f53c3c;
+}
+
+#pulseaudio {
+  background-color: @background;
+}
+
+#clock {
+  font-size: 20px;
+}
+
+#tray menu {
+  font-size:  15px;
+  color: @foreground;
+  background: rgba(0,0,0,0.6);
+  border: 1px solid;
+  border-color: @color3;
+  border-radius: 10px;
+}
+
+#custom-cava {
+  font-size: 30px;
+  padding-bottom: 2px;
+}
+
+#workspaces {
+  margin-left: 10px;
+}
+
+#tray > .active {
+  opacity: 0.9;
+  min-width: 18px;
+  margin: 3px 0px 3px 0px;
+  border-radius: 10px
+}
+
+
+#tray {
+  background-color: @background;
+  border: 1px solid;
+  border-color: @color8;
+  min-width: 18px;
+}
+
+#power-profiles #custom-power-saver,
+#power-profiles #custom-performance,
+#power-profiles #custom-balanced {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 15px;
+  background-color: @color16;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+#power-profiles #custom-performance {
+  border-right: 1px solid;
+}
+
+#power-profiles #custom-power-saver {
+  border-radius: 10px 0px 0px 10px;
+  border-left: 1px solid;
+}
+
+#power-profiles #custom-power-saver:hover {
+  background-color: @foreground;
+  color: @background;
+  border-color: @foreground;
+  border-radius: 10px 0px 0px 10px;
+}
+
+#power-profiles #custom-performance:hover {
+  background-color: @foreground;
+  color: @background;
+  border-color: @foreground;
+}
+
+#power-profiles #custom-balanced:hover {
+  background-color: @foreground;
+  color: @background;
+  border-color: @foreground;
+}
+
+#power-profiles #custom-current-mode {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 3px 0px 3px 0px;
+  font-size: 20px;
+}

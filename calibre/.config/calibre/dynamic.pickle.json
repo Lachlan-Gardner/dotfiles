@@ -1,0 +1,29 @@
+{
+  "add books dialog dir": "/home/Lachlan/Downloads",
+  "add books dialog dir-last-used-filter-spec-all-files": false,
+  "catalogs_to_be_synced": {
+    "__class__": "set",
+    "__value__": []
+  },
+  "notified-version-updates": {
+    "__class__": "set",
+    "__value__": [
+      "9.8",
+      "9.9",
+      "9.16"
+    ]
+  },
+  "save to disk dialog": "/home/Lachlan/Downloads",
+  "sort_history": [
+    [
+      "timestamp",
+      false
+    ],
+    [
+      "timestamp",
+      false
+    ]
+  ],
+  "welcome_wizard_device": "kobo",
+  "welcome_wizard_was_run": true
+}

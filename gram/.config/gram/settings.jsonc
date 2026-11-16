@@ -1,0 +1,207 @@
+// Gram settings
+//
+// For information on how to configure Gram, see the Gram
+// documentation: gram://docs/configuring-gram
+//
+// To see all of Gram's default settings without changing your
+// custom settings, run `gram: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "client_side_decoration_shadow": 10.0,
+  "prettier": {
+    "allowed": true
+  },
+  "diagnostics": {
+    "lsp_pull_diagnostics": {
+      "debounce_ms": 0
+    }
+  },
+  "lsp_highlight_debounce": 0,
+  "lsp_document_colors": "border",
+  "helix_mode": false,
+  "on_last_window_closed": "quit_app",
+  "restore_on_startup": "launchpad",
+  "multi_cursor_modifier": "cmd_or_ctrl",
+  "text_rendering_mode": "platform_default",
+  "colorize_brackets": true,
+  "completions": {
+    "words_min_length": 3
+  },
+  "show_whitespaces": "all",
+  "ensure_final_newline_on_save": false,
+  "indent_guides": {
+    "background_coloring": "disabled",
+    "coloring": "indent_aware",
+    "active_line_width": 2,
+    "line_width": 2
+  },
+  "hard_tabs": true,
+  "toolbar": {
+    "code_actions": false,
+    "breadcrumbs": true
+  },
+  "minimap": {
+    "max_width_columns": 80,
+    "current_line_highlight": "all",
+    "thumb_border": "none",
+    "thumb": "hover",
+    "show": "auto"
+  },
+  "scrollbar": {
+    "axes": {
+      "vertical": true,
+      "horizontal": false
+    },
+    "selected_text": false,
+    "selected_symbol": false
+  },
+  "gutter": {
+    "min_line_number_digits": 3
+  },
+  "relative_line_numbers": "wrapped",
+  "smooth_scroll": {
+    "enabled": true
+  },
+  "scroll_beyond_last_line": "off",
+  "active_pane_modifiers": {
+    "border_size": 3.0
+  },
+  "window_decorations": "client",
+  "bottom_dock_layout": "left_aligned",
+  "preview_tabs": {
+    "enabled": true
+  },
+  "tabs": {
+    "show_diagnostics": "errors",
+    "show_close_button": "always",
+    "file_icons": true,
+    "git_status": true
+  },
+  "tab_bar": {
+    "show_tab_bar_buttons": false,
+    "show_nav_history_buttons": true,
+    "show": true
+  },
+  "title_bar": {
+    "show_branch_name": true,
+    "show_branch_icon": true,
+    "show": true,
+    "show_menus": false
+  },
+  "status_bar": {
+    "icon_size": "large"
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+  "node": {
+    "allow_npm_install": true,
+    "allow_binary_download": false
+  },
+  "use_on_type_format": true,
+  "always_treat_brackets_as_autoclosed": true,
+  "vertical_scroll_margin": 4.0,
+  "buffer_font_weight": 300.0,
+  "buffer_font_family": "JetBrainsMono Nerd Font Mono",
+  "format_on_save": "on",
+  "languages": {
+    "Markdown": {
+      "inlay_hints": {
+        "enabled": true
+      },
+      "extend_list_on_newline": true,
+      "indent_list_on_tab": true,
+      "remove_trailing_whitespace_on_save": true
+    },
+    "C": {
+      "format_on_type": true,
+      "formatter": "language_server"
+    }
+  },
+  "lsp": {
+    "bash-language-server": {
+      "binary": {
+        "allow_binary_download": true
+      },
+      "enable_lsp_tasks": true
+    },
+    "lua-language-server": {
+      "binary": {
+        "allow_binary_download": true
+      },
+      "enable_lsp_tasks": true
+    },
+    "yaml-language-server": {
+      "binary": {
+        "ignore_system_version": false,
+        "allow_binary_download": false
+      },
+      "enable_lsp_tasks": true
+    },
+    "json-language-server": {
+      "binary": {
+        "enable_auto_updates": false,
+        "allow_binary_download": true
+      },
+      "enable_lsp_tasks": true
+    },
+    "hackatime": {
+      "binary": {
+        "allow_binary_download": false
+      },
+      "enable_lsp_tasks": true
+    },
+    "clangd": {
+      "binary": {
+        "allow_binary_download": true
+      },
+      "enable_lsp_tasks": true
+    },
+    "wakatime": {
+      "binary": {
+        "allow_binary_download": true
+      },
+      "enable_lsp_tasks": true
+    },
+    "rust-analyzer": {
+      "binary": {
+        "allow_binary_download": true
+      },
+      "enable_lsp_tasks": true
+    },
+    "asm-lsp": {
+      "binary": {
+        "allow_binary_download": true,
+        "ignore_system_version": false
+      },
+      "enable_lsp_tasks": true
+    }
+  },
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 400
+    }
+  },
+  "vim_mode": true,
+  "base_keymap": "VSCode",
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Gram (Default)",
+    "dark": "Gram (Default)"
+  },
+  "ui_font_size": 14,
+  "buffer_font_size": 17.0,
+  "theme": {
+    "mode": "dark",
+    "light": "Dracula Light (Alucard)",
+    "dark": "Dracula Solid",
+  },
+    "asm-lsp": {
+    "command": "asm-lsp",
+    "filetypes": [
+        "asm", "s", "S"
+    ]
+    }
+}

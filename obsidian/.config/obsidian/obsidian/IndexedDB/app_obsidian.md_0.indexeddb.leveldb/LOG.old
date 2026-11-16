@@ -1,0 +1,12 @@
+2026/11/10-10:16:54.889 3d21c Reusing MANIFEST /home/Lachlan/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/MANIFEST-000001
+2026/11/10-10:16:54.889 3d21c Recovering log #37
+2026/11/10-10:16:54.934 3d21c Reusing old log /home/Lachlan/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/000037.log 
+2026/11/10-11:14:36.523 3d21c Level-0 table #42: started
+2026/11/10-11:14:36.546 3d21c Level-0 table #42: 1269748 bytes OK
+2026/11/10-11:14:36.550 3d21c Delete type=0 #37
+2026/11/10-11:23:54.890 3d234 Compacting 1@1 + 1@2 files
+2026/11/10-11:23:54.908 3d234 Generated table #43@1: 1355 keys, 1004132 bytes
+2026/11/10-11:23:54.909 3d234 Compacted 1@1 + 1@2 files => 1004132 bytes
+2026/11/10-11:23:54.911 3d234 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/11/10-11:23:54.911 3d234 Delete type=2 #39
+2026/11/10-11:23:54.912 3d234 Delete type=2 #42

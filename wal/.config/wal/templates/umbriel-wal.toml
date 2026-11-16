@@ -1,0 +1,8 @@
+[colors]
+background = "{background}"
+text_primary = "{foreground}"
+backdrop = "{background}"
+
+[colors.border]
+focused = "{color12}"
+unfocused = "{color2}"

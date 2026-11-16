@@ -1,5 +1,5 @@
 #!/bin/bash
 
 wal -n -i "$@"
-awww img "$(<"${HOME}/.cache/wal/wal")"
+swaybg -i "$(<"${HOME}/.cache/wal/wal")"
 echo "\$current_wallpaper = $@" >$HOME/.config/hypr/currentwallpaper.conf
