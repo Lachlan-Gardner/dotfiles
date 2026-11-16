@@ -1,6 +1,0 @@
-#!/bin/bash
-
-for directory in ~/dotfiles/*
-do
-	stow $directory
-done
